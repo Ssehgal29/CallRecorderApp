@@ -13,6 +13,12 @@
         android:text="@string/start_recording"
         android:textAllCaps="false"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/custom_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorPrimary"
         />
 
     <Button
@@ -22,6 +28,42 @@
         android:text="@string/stop_recording"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@+id/startRecording"
+        android:background="@drawable/custom_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/playRecordedAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play_recorded"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/stopRecording"
+        android:background="@drawable/custom_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/stopRecordedAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_recorded"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/playRecordedAudio"
+        android:background="@drawable/custom_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorPrimary"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
